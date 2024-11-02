@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Very important note: databinding will not word if you don't include all your layout in <layout tag>-->
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    adding data variables from file StudentData and MainActivityPresenter: -->
+    <data>
+        <variable
+            name="grader"
+            type="com.bao.databinding.StudentData" />
+
+        <variable
+            name="presenter"
+            type="com.bao.databinding.MainActivityPresenter" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BCE9E7"
+        android:orientation="vertical">
+
+<!--grader.student: student chinh la thuoc tinh ben trong class StudentData -->
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@={grader.student}"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+<!--grader.grade: grade chinh la thuoc tinh ben trong class StudentData-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@{grader.grade}"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@={grader.grade}"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+<!-- () -> presenter.onShowData(grader): onShowData(grader) chính là 1 method ben trong class MainActivityPresenter-->
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CC8383"
+            android:onClick="@{() -> presenter.onShowData(grader)}"
+            android:text="Show Data Model"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+
+</layout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blue">#007aff</color>
+    <color name="red">#d62120</color>
+
+<!--    color arrays-->
+    <string-array name="colors">
+        <item>#32e2e2</item>
+        <item>#af917f</item>
+        <item>#f74171</item>
+    </string-array>
+</resources>
