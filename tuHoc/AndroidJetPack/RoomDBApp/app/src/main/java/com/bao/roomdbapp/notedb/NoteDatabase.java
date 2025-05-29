@@ -7,7 +7,8 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.room.TypeConverters;
 
-@Database(entities = {Note.class}, version = 1)
+//exportSchema = false: để khỏi xuất lượt đồ file json
+@Database(entities = {Note.class}, version = 1, exportSchema = false)
 @TypeConverters({DataRoomConverter.class})
 public abstract class NoteDatabase extends RoomDatabase {
     public abstract NoteDao getNoteDao();

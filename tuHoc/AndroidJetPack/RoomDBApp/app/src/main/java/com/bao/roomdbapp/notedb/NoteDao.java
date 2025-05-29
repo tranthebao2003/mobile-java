@@ -12,7 +12,7 @@ import java.util.List;
 public interface NoteDao {
 
 //    lấy all data tu all cot cua bang  Constants.Table_Name_Note
-    @Query("SELECT * FROM" + Constants.Table_Name_Note)
+    @Query("SELECT * FROM " + Constants.Table_Name_Note)
     List<Note> getNotes();
 
 //    insert the Data:

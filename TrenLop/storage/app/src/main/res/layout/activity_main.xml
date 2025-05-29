@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:layout_marginBottom="60dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/write_internal_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/button"
+        android:text="write internal storage"
+        app:backgroundTint="@null"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        />
+
+    <Button
+        android:id="@+id/read_internal_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/button"
+        android:text="read internal storage"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/write_cache_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/button"
+        android:text="write cache file"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/read_cache_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/button"
+        android:layout_marginBottom="20dp"
+        android:textSize="20sp"
+        android:text="read cache file"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/write_external_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/button"
+        android:text="write external storage"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@null" />
+
+    <Button
+        android:id="@+id/read_external_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:background="@drawable/button"
+        android:text="read external storage"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        app:backgroundTint="@null" />
+</LinearLayout>

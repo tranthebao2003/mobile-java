@@ -58,12 +58,13 @@ public class AddNoteActivity extends AppCompatActivity {
                     note.setContent(et_content.getText().toString());
                     note.setTitle(et_title.getText().toString());
                     noteDatabase.getNoteDao().updateNote(note);
+//                    2 là update thanh cong
                     setResult(note, 2);
 
 //                    create a new note
                 } else{
-                    note = new Note(et_content.getText().toString(),
-                            et_title.getText().toString());
+                    note = new Note(et_title.getText().toString(),
+                            et_content.getText().toString());
                     new InsertTask(AddNoteActivity.this, note).execute();
                 }
             }
@@ -83,8 +84,9 @@ public class AddNoteActivity extends AppCompatActivity {
         private WeakReference<AddNoteActivity> activityWeakReference;
         private Note note;
 
-//        only retain a weak reference to the activity:
-        InsertTask(AddNoteActivity context, Note note){
+//      only retain a weak reference to the activity:
+//      constructor
+         InsertTask(AddNoteActivity context, Note note){
             activityWeakReference = new WeakReference<>(context);
             this.note = note;
         }
@@ -101,9 +103,12 @@ public class AddNoteActivity extends AppCompatActivity {
             return true;
         }
 
+//        aBoolea: nhận từ doInBackground trả về nó tương ứng với kiểu boolean mà
+//     nó được khai báo ở phần AsyncTask<, , boolean>
         @Override
         protected void onPostExecute(Boolean aBoolean) {
             if(aBoolean){
+//                1 la them thanh cong
                 activityWeakReference.get().setResult(note, 1);
                 activityWeakReference.get().finish();
             }

@@ -1,6 +1,7 @@
 package com.bao.roomdbapp.adapters;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,6 +45,7 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.BeanHolder> 
 //        thao túng những thành phần đã được mapping ở BeanHolder
 //        list.get(position).getTitle(): lấy ra cái thuoc tinh title cua object tại vị
 //        trí position sau đó dùng setText để show lên man hinh
+
         holder.textViewTitle.setText(list.get(position).getTitle());
 //        tuong tu như trên nhung thay vi lay thuoc tinh title thi gio lay
 //        thuoc tinh content

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/tap1"
+        android:title="Tap 1"
+        />
+
+    <item android:id="@+id/tap2"
+        android:title="Tap 2"
+        />
+
+    <item android:id="@+id/tap3"
+        android:title="Tap 3"
+        />
+</menu>

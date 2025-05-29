@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- khi them group va co id cho group thi no se tu chia-->
+    <group
+        android:id="@+id/group1"
+        >
+        <item
+            android:icon="@drawable/menu"
+            android:id="@+id/navMenu"
+            android:title="Menu"/>
+
+        <item
+            android:icon="@drawable/cart"
+            android:id="@+id/navCart"
+            android:title="Cart"/>
+
+        <item
+            android:icon="@drawable/favorite"
+            android:id="@+id/navFavourite"
+            android:title="Favourite"/>
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        >
+        <item
+            android:icon="@drawable/ongoing"
+            android:id="@+id/navOrders"
+            android:title="Ongoing Orders"/>
+
+        <item
+            android:icon="@drawable/history"
+            android:id="@+id/navHistory"
+            android:title="History"/>
+
+        <item
+            android:icon="@drawable/round_feedback_24"
+            android:id="@+id/navFeedback"
+            android:title="Feedback"/>
+    </group>
+
+    <group
+        android:id="@+id/group3"
+        >
+        <item
+            android:icon="@drawable/receipt"
+            android:id="@+id/navTerms"
+            android:title="Terms and conditions"/>
+
+        <item
+            android:icon="@drawable/head"
+            android:id="@+id/navContact"
+            android:title="Contact us"/>
+
+        <item
+            android:icon="@drawable/share"
+            android:id="@+id/navShare"
+            android:title="Share"/>
+    </group>
+
+</menu>

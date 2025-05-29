@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.FoodAppDesign" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#ff5e00</item>
+        <item name="colorPrimaryVariant">#ff5e00</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.FoodAppDesign" parent="Base.Theme.FoodAppDesign" />
+</resources>
